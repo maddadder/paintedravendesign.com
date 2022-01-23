@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "zambonigirl.fullname" . }}
+  name: {{ include "paintedravendesign.fullname" . }}
   labels:
-    {{- include "zambonigirl.labels" . | nindent 4 }}
+    {{- include "paintedravendesign.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "zambonigirl.selectorLabels" . | nindent 4 }}
+    {{- include "paintedravendesign.selectorLabels" . | nindent 4 }}

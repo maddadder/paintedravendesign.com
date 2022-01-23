@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "zambonigirl.fullname" . }}
+  name: {{ include "paintedravendesign.fullname" . }}
   labels:
-    {{- include "zambonigirl.labels" . | nindent 4 }}
+    {{- include "paintedravendesign.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "zambonigirl.fullname" . }}
+    name: {{ include "paintedravendesign.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:

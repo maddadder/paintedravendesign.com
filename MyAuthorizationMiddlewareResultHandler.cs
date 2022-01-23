@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-namespace zambonigirl
+namespace paintedravendesign
 {
     public class MyAuthorizationMiddlewareResultHandler : IAuthorizationMiddlewareResultHandler
     {
