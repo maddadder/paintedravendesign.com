@@ -17,5 +17,10 @@ docker-compose down
 
 # Deploy to microk8s
 
-docker push 192.168.1.84:32000/paintedravendesign:1.0.1
+docker push 192.168.1.84:32000/paintedravendesign:1.0.2
 microk8s helm3 install paintedravendesign ./paintedravendesign
+
+# Deploy on daffy
+
+docker push 192.168.1.151:32000/paintedravendesign:1.0.2
+helm install paintedravendesign ./paintedravendesign
